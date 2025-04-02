@@ -10,7 +10,7 @@ export default async function Page() {
 
     if (!user) {
         return (
-            redirect('/sing-in')
+            redirect('/sign-in')
         )
     }
 
