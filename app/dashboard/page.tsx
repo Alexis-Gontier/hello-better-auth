@@ -1,4 +1,4 @@
-import { getUser } from '@/lib/auth-session'
+import { getSession } from '@/lib/auth-session'
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { auth } from '@/lib/auth'
@@ -6,7 +6,9 @@ import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 
 export default async function Page() {
-    const user = await getUser()
+    const session = await getSession()
+
+    const user = session?.user
 
     if (!user) {
         return (
@@ -31,7 +33,7 @@ export default async function Page() {
                         />
                     )}
                     <p className="text-sm text-gray-500">
-                        Last login: {new Date(user.updatedAt).toLocaleDateString()}
+                        Last login: {new Date(session.session.updatedAt).toLocaleString()}
                     </p>
                     <p className="text-sm text-gray-500">
                         Account created on: {new Date(user.createdAt).toLocaleDateString()}
