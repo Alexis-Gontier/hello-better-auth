@@ -4,6 +4,7 @@ import { PrismaClient } from "@prisma/client";
 import { nextCookies } from "better-auth/next-js";
 
 const prisma = new PrismaClient();
+
 export const auth = betterAuth({
     database: prismaAdapter(prisma, {
         provider: "sqlite",
@@ -12,6 +13,6 @@ export const auth = betterAuth({
         enabled: true
     },
     plugins: [
-        nextCookies()
+        nextCookies() // make sure this is the last plugin in the array
     ]
 });
