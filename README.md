@@ -39,6 +39,12 @@ BETTER_AUTH_SECRET=
 BETTER_AUTH_URL=http://localhost:3000
 ```
 
+### Génération du Client Prisma
+Avant de lancer le projet, exécutez la commande suivante pour générer le client Prisma :
+```bash
+npx prisma generate
+```
+
 ### Installation des Dépendances
 ```bash
 npm install
@@ -49,3 +55,9 @@ npm install
 npm run dev
 ```
 Accédez à l'application via `http://localhost:3000`
+
+## Utilisation
+- **Inscription :** Rendez-vous sur la page `/sign-up` pour créer un nouveau compte.
+- **Connexion :** Connectez-vous via la page `/sign-in` avec vos identifiants.
+- **Dashboard :** Une fois connecté, vous serez redirigé vers `/dashboard`.
+
