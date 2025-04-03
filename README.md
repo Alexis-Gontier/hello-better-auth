@@ -31,7 +31,7 @@ cd hello-better-auth
 ```
 
 ### Configuration des Variables d'Environnement
-Créez un fichier `.env` à la racine du projet et ajoutez-y :
+Créez un fichier `.env` à la racine du projet. Vous pouvez générer ce fichier en suivant les instructions détaillées sur [la documentation de better-auth](https://www.better-auth.com/docs/installation) et ajouter-y les variables suivantes :
 ```env
 DATABASE_URL="file:./dev.db"
 
