@@ -1,5 +1,4 @@
-# Better Auth Explorer
-
+# Hello Better Auth
 Better Auth Explorer est une application web construite avec Next.js et Prisma, utilisant SQLite, qui démontre un flux d'authentification sécurisé avec better-auth. Ce projet sert d'outil de découverte pour explorer les techniques modernes d'authentification et les bonnes pratiques de développement web.
 
 ## Aperçu du Projet
